@@ -1,0 +1,357 @@
+%-------------------------
+% Resume in Latex
+% Author : Vaishanth
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\setlist[itemize]{label=\textbullet}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}%\setmainfont{Times New Roman}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\documentclass{article}
+\usepackage{xcolor}
+\usepackage{hyperref}
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% \usepackage[T1]{fontenc}
+% \usepackage[T1]{fontenc}
+% \usepackage{cochineal}
+% \usepackage{fourier}
+
+% \usepackage{fontspec}
+% \usepackage{polyglossia}
+% \setmainlanguage{german}
+% \setmainfont{Times New Roman}
+
+% serif
+\usepackage{CormorantGaramond}
+\usepackage{charter}
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+\urlstyle{same}
+
+\definecolor{airforceblue}{rgb}{0.36, 0.54, 0.66}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\vspace{-8pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSingleSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.1in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------\usepackage{fontspec}
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+%----------HEADING----------
+
+
+\begin{center}
+    \textcolor{black}{\fontsize{45}{5}\selectfont Sakshi} {\huge {\textcolor{black}{\fontsize{45}{5}\selectfont Rai}}} \\ \vspace{2pt}
+    {\textbf{} \textcolor{magenta!70}{Delhi, India}}  \\ 
+    \vspace{2.5pt} 
+    {\color{gray}{+91-9310993253}} ~ 
+    \textbar{}
+    % {\textcolor{black}{\faHome}}\hspace{1.4pt}\href{[url to portfolio]}{\color{blue}{Portfolio}} ~ 
+    % \textbar{}
+    \textcolor{black}{\faEnvelope}~\href{mailto:raisakshi1901@gmail.com}{\color{gray}{raisakshi1901@gmail.com}} ~ 
+    \textbar{}
+   {\faLinkedin}\href{https://www.linkedin.com/in/iamsakshirai/}{ \color{gray}{iamsakshirai}}  ~
+   \textbar{}
+    {\faGithub}\href{https://github.com/ImSakshiRai}{ \color{gray}{ImSakshiRai}} ~
+    \vspace{3pt}
+\end{center}
+
+% %-----------EDUCATION-----------
+% \section{\textcolor{magenta}{\textbf{Edu}}cation \hrulefill }
+%   \resumeSubHeadingListStart
+%     \resumeSubheading
+%      {\textbf{Maharshi Dayanand University}}{\textcolor{magenta!70}{\small Haryana, India}}
+%       {\textcolor{gray}{\small B.TECH-COMPUTER SCIENCE AND ENGINEERING}}{\textcolor{gray!70}{\small Aug. 2019 - July. 2023}}
+%     \vspace{-4pt}
+%      \resumeSubheading
+%       {kendriya Vidyalaya No. 1 Roorkee}{\textcolor{magenta!70}{\small Roorkee, India}}
+%       {\textcolor{gray}{\small INTERMEDIATE - PCM }}
+%       {\textcolor{gray!70}{\small July. 2018 - July. 2019}}
+%   \resumeSubHeadingListEnd
+%   \vspace{-10pt}
+
+% %-----------PROGRAMMING SKILLS-----------
+% \section{\textcolor{magenta}{\textbf{Tech}}nical Skills \hrulefill }
+%  \begin{itemize}[leftmargin=0in, label={}]
+%     \small{\item{
+%      \textbf{\normalsize{Programming Languages}}{\hspace{0.8em} \normalsize{\textcolor{gray}{C++,Javascript}}} \\
+%       \vspace{1.2pt}
+      
+%      \textbf{\normalsize{Libraries/Frameworks}}{\hspace{2em} \normalsize{\textcolor{gray}{Html,  CSS, Tailwind CSS, React.js, Git}}} \\
+%       \vspace{1.2pt}
+      
+%      \textbf{\normalsize{Database}}{\hspace{8.6em} \normalsize{\textcolor{gray}{PostgreSQL }}} \\
+%      \textbf{\normalsize{Platforms}}{\hspace{8.4em} \normalsize{\textcolor{gray}{GitHub ,Visual Studio Code,Vercel  }}}
+
+%      % copy and paste above textbf block to add more 
+%      }}
+%  \end{itemize}
+%  \vspace{-16pt}
+ 
+ %-----------EXPERIENCE-----------
+\section{\textcolor{magenta}{\fontsize{18}{15}\selectfont \textbf{Exper}}\fontsize{18}{15}\selectfont ience \hrulefill }
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Sony India Pvt Ltd}{} 
+      {\textcolor{gray}{Technical Trainee}}{\textcolor{gray!70}{March 2023 - Dec 2023}}
+      \resumeItemListStart
+            \resumeItem{\textcolor{gray!100}{\normalsize{Mainly work at their software database tool which is ICON (Integrated Customer Oriented Navigation)}}}
+            \resumeItem{\textcolor{gray!100}{\normalsize{To analyze and make relevant data regarding customers data .}}}  
+            \resumeItem{\textcolor{gray!100}{\normalsize{Also had exposure to various Odoo domains including CRM, HRMS, Excel.}}}  
+      \resumeItemListEnd  
+
+    \resumeSubheading
+      {Hacktoberfest}{} 
+      {\textcolor{gray}{Open Source Contributor}}{\textcolor{gray!70}{Oct 2022 - Oct 2022}}
+      \resumeItemListStart
+            \resumeItem{\textcolor{gray!100}{\normalsize{Contributed to Python-based open-source projects, demonstrating proficiency in the language.}}}
+            \resumeItem{\textcolor{gray!100}{\normalsize{Joined multiple repositories on platforms like GitHub and collaborated with the developer community.}}}  
+            \resumeItem{\textcolor{gray!100}{\normalsize{Reviewed and merged 3 pull requests from other contributors, ensuring code quality and fostering collaboration.}}}  
+      \resumeItemListEnd  
+
+    \resumeSubheading
+      {Edunet Foundation}{} 
+      {\textcolor{gray}{Internship}}{\textcolor{gray!70}{Jan 2023 - Jan
+      2023}}
+      \resumeItemListStart
+            \resumeItem{\textcolor{gray!100}{\normalsize{Completed intership on Emerging Technologies.}}} \hspace{280pt}
+             \textcolor{gray}{\normalsize{\href{https://drive.google.com/file/d/1asf_yhOynAru2nX9V-KXlPNmc3Yein2_/view?usp=sharing}{Link}}}
+            \resumeItem{\textcolor{gray!100}{\normalsize{Got familiar with Artificial Intelligence , Cyber Security, Front-end Development and interacting with various projects.}}} 
+            % \resumeItem{\normalsize{Sed nec quam et urna placerat placerat. Aenean at mi id nunc venenatis feugiat}}  
+      \resumeItemListEnd  
+
+    % copy and paste above resumeSubheading block to add more 
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------PROJECTS-----------
+\section{\textcolor{magenta}{\fontsize{18}{15}\selectfont \textbf{Proj}}\fontsize{18}{15}\selectfont ects \hrulefill}    
+\textbf{Welcome to Movix: Your Ultimate Movie Destination} \hspace{252pt} \href{https://github.com/ImSakshiRai/MOvix}{\color{gray!60}\textit{Github}} \vspace{-17pt}
+\resumeItemListStart
+    \resumeItem{\textcolor{gray!100}{\normalsize{With Movix, one can download your favorite movies directly to your device.}}} \vspace{-8pt}
+    \resumeItem{\textcolor{gray!100}{\normalsize{ Movix is more than just a search engine –it's a community of movie lovers \\ who share a passion for cinema made with vite, React.js.}}} \hspace{235pt}
+    \textcolor{gray}{\normalsize{\href{https://iamsakshirai-movixsite.vercel.app/}{Link}}}  
+\vspace{5pt}
+\resumeItemListEnd
+
+\textbf{Employee Management System using Django} \hspace{288pt} \href{https://github.com/ImSakshiRai/EMPLOYEE_MANAGEMENT_SYSTEM}{\color{gray!60}\textit{Github}}  \vspace{-7pt}
+\resumeItemListStart
+    \resumeItem{\textcolor{gray!100}{\normalsize{An ERP (Enterprise Resource Planning) system developed as an interface/database which will \\ help management keep a record of employee information.}}} \vspace{-8pt}
+    \resumeItem{\textcolor{gray!100}{\normalsize{Also providing full functional reports to employees of themselves.}}} 
+\vspace{1pt}
+\resumeItemListEnd
+
+\textbf{Github User Finder} \hspace{419pt} \href{https://github.com/ImSakshiRai/Github_User_Finder}{\color{gray!60}\textit{Github}} \vspace{-4pt}
+\resumeItemListStart
+    \resumeItem{\textcolor{gray!100}{\normalsize{GitHub Finder makes it super easy to find any random GitHub user and see their work.}}} \vspace{-8pt}
+    \resumeItem{\textcolor{gray!100}{\normalsize{An app where you can search for github users and display their info.}}} \hspace{181pt}
+    \textcolor{gray}{\normalsize{\href{https://imsakshirai.github.io/Github_User_Finder/}{Link}}} 
+    % \resumeItem{\textcolor{gray!100}{\normalsize{Include numbers and special characters in passwords.}}} \hspace{250pt}
+    % \textcolor{gray}{\normalsize{\href{https://imsakshirai.github.io/Github_User_Finder/}{Link}}}
+\vspace{-4pt}
+\resumeItemListEnd
+
+% copy and paste the above resumeItem block to add more 
+
+%-----------PROGRAMMING SKILLS-----------
+\section{\textcolor{magenta}{\fontsize{18}{15}\selectfont \textbf{Techn}}\fontsize{18}{15}\selectfont ical \fontsize{18}{15}\selectfont Skills \hrulefill }
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{\normalsize{Programming Languages}}{\hspace{0.8em} \normalsize{\textcolor{gray}{C++, Javascript, Typescript}}} \\
+      \vspace{1.2pt}
+      
+     \textbf{\normalsize{Libraries/Frameworks}}{\hspace{2em} \normalsize{\textcolor{gray}{Html,  CSS, Tailwind CSS, React.js, Next.js}}} \\
+      \vspace{1.2pt}
+      
+     \textbf{\normalsize{Database}}{\hspace{8.6em} \normalsize{\textcolor{gray}{PostgreSQL, Firebase }}} \\
+     \textbf{\normalsize{Platforms}}{\hspace{8.4em} \normalsize{\textcolor{gray}{Visual Studio Code, Vercel, Git \& Github  }}}
+
+     % copy and paste above textbf block to add more 
+     }}
+ \end{itemize}
+ \vspace{-16pt}
+ 
+ 
+%-----------EDUCATION-----------
+\section{\textcolor{magenta}{\fontsize{18}{15}\selectfont \textbf{Educ}}\fontsize{18}{15}\selectfont tion \hrulefill } \vspace{2pt} 
+  \resumeSubHeadingListStart
+    \resumeSubheading
+     {\textbf{Maharshi Dayanand University}}{\textcolor{magenta!70}{\small Haryana, India}} 
+      {\textcolor{gray}{\small B.TECH-COMPUTER SCIENCE AND ENGINEERING}}
+      {\textcolor{gray!70}{\small Aug. 2019 - July. 2023}}
+    \vspace{2pt}
+     \resumeSubheading  
+      {Kendriya Vidyalaya No. 1 Roorkee}{\textcolor{magenta!70}{\small Roorkee, India}}
+      {\textcolor{gray}{\small INTERMEDIATE - PCM }}
+      {\textcolor{gray!70}{\small July. 2018 - July. 2019}}
+  \resumeSubHeadingListEnd
+  % \vspace{-10pt}
+  
+%-----------Certifications---------------
+\section{\fontsize{18}{15}\selectfont \textcolor{magenta}{\fontsize{18}{15}\selectfont \textbf{Certif}}\fontsize{18}{15}\selectfont ications \hrulefill } \vspace{-2pt}    
+    
+  \resumeItemListStart
+    \resumeItem{\textcolor{gray!100}{\normalsize{JavaScript and React Certificate}}}
+    \hspace{360pt} \href{https://drive.google.com/file/d/1zTM5BfAcfjrEoLrSW7W3yrRidSDSke0R/view?usp=sharing}{\color{gray}{Link}}
+    \vspace{-2pt}
+    
+    \resumeItem{\textcolor{gray!100}{\normalsize{Learn by doing: CSS!}}}
+    \hspace{412pt}\href{https://drive.google.com/file/d/1zY6SGawCxcncrz6XqJo0_wfqlbkItoqE/view?usp=sharing}{\color{gray}{Link}}
+    \vspace{-2pt}
+
+     \resumeItem{\textcolor{gray!100}{\normalsize{Soft Skill Program}}}
+     \hspace{427pt}\href{https://drive.google.com/file/d/1QRDcITHTRKysC4zRcBmUFynu381fzmf6/view?usp=sharing}{\color{gray}{Link}}
+    \vspace{-2pt}
+
+    % copy and paste above resumeItem block to add more 
+    
+  \resumeItemListEnd 
+      
+\vspace{-8pt}
+
+%-----------EXTRACURRICULAR---------------
+\section{\textcolor{magenta}{\fontsize{18}{15}\selectfont \textbf{Soft}} \fontsize{18}{15}\selectfont Skills \hrulefill } \vspace{-2pt}        
+      \resumeItemListStart
+        \resumeItem{\textcolor{gray!80}{\normalsize{{Good Communication Skills}   }}} 
+        \vspace{-7pt}
+        
+       % \resumeItem{\textcolor{gray!80}{\normalsize{{Dedicated} }}}   
+       %  \vspace{-5pt}
+        
+       % \resumeItem{\textcolor{gray!80}{\normalsize{{Time management} }}}   
+       %  \vspace{-5pt}
+
+       \resumeItem{\textcolor{gray!80}{\normalsize{{Adaptability} }}}   
+        \vspace{-7pt}
+
+       \resumeItem{\textcolor{gray!80}{\normalsize{{Quick Learner} }}}   
+        \vspace{-7pt}
+
+        % copy and paste above resumeItem block to add more 
+      \resumeItemListEnd 
+      
+\vspace{-12pt}
+
+\end{document}
